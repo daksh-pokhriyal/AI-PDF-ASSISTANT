@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PRIME AI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css" />
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-robot"></i>
+
+            <h1>AI PDF Assistant </h1>
+
+        </div>
+
+        <p>Your Intelligent PDF Assistant</p>
+
+    </nav>
+
+
+    <!-- ================= MAIN CONTAINER ================= -->
+
+
+
+
+
+
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- ================= UPLOAD ================= -->
+
+        <section id="upload-section">
+
+            <h2>
+
+                Upload PDF
+
+            </h2>
+
+            <div id="upload-box">
+
+                
+
+                
+
+                
+
+                <input type="file" id="file-input" accept=".pdf">
+
+                <button id="upload-btn">
+
+                    Upload PDF
+
+                </button>
+
+                <p id="pdf-name">
+
+                    No PDF Selected
+
+                </p>
+
+                <p id="upload-status"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CHAT ================= -->
+
+        <section id="chat-section">
+
+            <h2>
+
+                Chat
+
+            </h2>
+
+            <div id="chat-container">
+
+                <!-- Messages appear here -->
+
+            </div>
+
+            <div class="chat-input">
+
+                <input type="text" id="chat-input" placeholder="Ask anything about your PDF...">
+
+                <button id="send-btn">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SUMMARY ================= -->
+
+        <section id="summary-section">
+
+            <div class="summary-header">
+
+                <h2>
+
+                    Summary
+
+                </h2>
+
+                <button id="summary-btn">
+
+                    Generate Summary
+
+                </button>
+
+            </div>
+
+            <div id="summary-container">
+
+                <p>
+
+                    Click "Generate Summary" to create notes.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+   
+    <script src="js/upload.js"></script>
+
+    <script src="js/chat.js"></script>
+
+    <script src="js/summary.js"></script>
+
+    <script src="js/app.js"></script>
+
+
+    
+    
+
+    <!-- Marked -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+
+</body>
+
+</html>

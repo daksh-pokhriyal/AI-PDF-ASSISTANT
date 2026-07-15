@@ -1,0 +1,1120 @@
+/* ===========================================================
+                        GOOGLE FONT
+=========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+/* ===========================================================
+                        ROOT VARIABLES
+=========================================================== */
+
+:root{
+
+    --bg:#0F172A;
+
+    --card:#1E293B;
+
+    --card-hover:#243447;
+
+    --primary:#2563EB;
+
+    --primary-hover:#1D4ED8;
+
+    --border:#334155;
+
+    --text:#F8FAFC;
+
+    --secondary:#CBD5E1;
+
+    --success:#22C55E;
+
+    --danger:#EF4444;
+
+    --shadow:0px 10px 30px rgba(0,0,0,.25);
+
+    --radius:18px;
+
+}
+
+
+/* ===========================================================
+                        RESET
+=========================================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:"Inter",sans-serif;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    min-height:100vh;
+
+}
+
+
+/* ===========================================================
+                        NAVBAR
+=========================================================== */
+
+nav{
+
+    height:75px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 40px;
+
+    background:#111827;
+
+    border-bottom:1px solid var(--border);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo i{
+
+    color:var(--primary);
+
+    font-size:32px;
+
+}
+
+.logo h1{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+}
+
+nav p{
+
+    color:var(--secondary);
+
+    font-size:15px;
+
+}
+
+
+/* ===========================================================
+                    MAIN CONTAINER
+=========================================================== */
+
+.container{
+
+    display:grid;
+
+    grid-template-columns:260px 1fr;
+
+    min-height:calc(100vh - 75px);
+
+}
+
+
+/* ===========================================================
+                        SIDEBAR
+=========================================================== */
+
+aside{
+
+    background:#111827;
+
+    border-right:1px solid var(--border);
+
+    padding:30px 22px;
+
+}
+
+aside h2{
+
+    margin-bottom:25px;
+
+    font-size:22px;
+
+}
+
+aside ul{
+
+    list-style:none;
+
+}
+
+aside li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    margin-bottom:12px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+aside li:hover{
+
+    background:var(--card);
+
+}
+
+aside li i{
+
+    width:20px;
+
+    color:var(--primary);
+
+}
+
+.pdf-info{
+
+    margin-top:40px;
+
+    background:var(--card);
+
+    padding:18px;
+
+    border-radius:var(--radius);
+
+    border:1px solid var(--border);
+
+}
+
+.pdf-info h3{
+
+    margin-bottom:15px;
+
+    color:var(--secondary);
+
+    font-size:15px;
+
+}
+
+#pdf-name{
+
+    word-break:break-word;
+
+    font-size:15px;
+
+}
+
+
+/* ===========================================================
+                        MAIN
+=========================================================== */
+
+main{
+
+    padding:35px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:35px;
+
+}
+
+
+/* ===========================================================
+                        SECTIONS
+=========================================================== */
+
+section{
+
+    background:var(--card);
+
+    border-radius:var(--radius);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+    padding:25px;
+
+    transition:.25s;
+
+}
+
+section:hover{
+
+    transform:translateY(-3px);
+
+}
+
+section h2{
+
+    margin-bottom:20px;
+
+    font-size:24px;
+
+}
+
+
+/* ===========================================================
+                    UPLOAD SECTION
+=========================================================== */
+
+#upload-status{
+
+    margin-top:20px;
+
+    color:#22C55E;
+
+    font-weight:600;
+
+    text-align:center;
+
+}
+
+#upload-section{
+
+   
+    padding:24px;
+
+}
+
+#upload-box{
+
+
+
+    border:3px dashed var(--border);
+
+    border-radius:var(--radius);
+
+    padding: 20px;
+
+    
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+    height: 170px;
+
+}
+
+#upload-box:hover{
+
+    border-color:var(--primary);
+
+    background:rgba(37,99,235,.08);
+
+}
+
+#upload-box i{
+
+    font-size:20px;
+
+    color:var(--primary);
+
+}
+
+#upload-box p{
+
+    color:var(--secondary);
+
+    font-size:16px;
+
+}
+
+#file-input{
+
+    margin-top:10px;
+
+    color:var(--secondary);
+
+}
+
+#upload-btn{
+
+    margin-top:15px;
+
+    padding:12px 28px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--primary);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+    
+
+}
+
+#upload-btn:hover{
+
+    background:var(--primary-hover);
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ===========================================================
+                    CHAT SECTION
+=========================================================== */
+
+#chat-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    min-height:600px;
+
+}
+
+#chat-container{
+
+    flex:1;
+
+    background:#0B1220;
+
+    border-radius:15px;
+
+    border:1px solid var(--border);
+
+    padding:20px;
+
+    overflow-y:auto;
+
+    max-height:500px;
+
+}
+
+
+/* ===========================================================
+                    CHAT MESSAGES
+=========================================================== */
+
+.message{
+
+    display:flex;
+
+    margin-bottom:20px;
+
+}
+
+.user{
+
+    justify-content:flex-end;
+
+}
+
+.ai{
+
+    justify-content:flex-start;
+
+}
+
+.bubble{
+
+    max-width:75%;
+
+    padding:16px;
+
+    border-radius:16px;
+
+    line-height:1.6;
+
+    font-size:15px;
+
+    word-break:break-word;
+
+}
+
+.user .bubble{
+
+    background:var(--primary);
+
+    color:white;
+
+    border-bottom-right-radius:4px;
+
+}
+
+.ai .bubble{
+
+    background:var(--card-hover);
+
+    border-bottom-left-radius:4px;
+
+}
+
+
+/* ===========================================================
+                    CHAT INPUT
+=========================================================== */
+
+.chat-input{
+
+    margin-top:20px;
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+#chat-input{
+
+    flex:1;
+
+    padding:16px;
+
+    border-radius:14px;
+
+    border:1px solid var(--border);
+
+    background:#111827;
+
+    color:white;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+#chat-input:focus{
+
+    border-color:var(--primary);
+
+}
+
+#send-btn{
+
+    width:60px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:var(--primary);
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    font-size:18px;
+
+}
+
+#send-btn:hover{
+
+    background:var(--primary-hover);
+
+}
+
+
+/* ===========================================================
+                    SUMMARY SECTION
+=========================================================== */
+
+#summary-section{
+
+    min-height:350px;
+
+}
+
+#summary-container{
+
+    background:#0B1220;
+
+    border:1px solid var(--border);
+
+    border-radius:15px;
+
+    padding:20px;
+
+    line-height:1.8;
+
+    color:var(--secondary);
+
+    overflow-y:auto;
+
+    max-height:450px;
+
+}
+
+
+/* ===========================================================
+                    HEADINGS INSIDE SUMMARY
+=========================================================== */
+
+#summary-container h1,
+
+#summary-container h2,
+
+#summary-container h3{
+
+    color:white;
+
+    margin-top:25px;
+
+    margin-bottom:10px;
+
+}
+
+#summary-container ul{
+
+    padding-left:20px;
+
+}
+
+#summary-container li{
+
+    margin-bottom:8px;
+
+}
+
+
+/* ===========================================================
+                    BUTTONS
+=========================================================== */
+
+button{
+
+    font-family:"Inter",sans-serif;
+
+}
+
+button:active{
+
+    transform:scale(.97);
+
+}
+
+
+/* ===========================================================
+                    INPUT PLACEHOLDER
+=========================================================== */
+
+::placeholder{
+
+    color:#94A3B8;
+
+}
+
+
+/* ===========================================================
+                    SCROLLBAR
+=========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111827;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#334155;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#475569;
+
+}
+
+
+/* ===========================================================
+                    SMOOTH ANIMATIONS
+=========================================================== */
+
+section{
+
+    animation:fadeUp .5s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ===========================================================
+                    CARD HOVER
+=========================================================== */
+
+section:hover{
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+
+/* ===========================================================
+                    UPLOAD ANIMATION
+=========================================================== */
+
+#upload-box:hover i{
+
+    transform:translateY(-6px);
+
+}
+
+#upload-box i{
+
+    transition:.3s;
+
+}
+
+
+/* ===========================================================
+                    BUTTON ANIMATION
+=========================================================== */
+
+button{
+
+    transition:.25s;
+
+}
+
+button:hover{
+
+    box-shadow:0 8px 20px rgba(37,99,235,.35);
+
+}
+
+
+/* ===========================================================
+                    CHAT MESSAGE ANIMATION
+=========================================================== */
+
+.message{
+
+    animation:messagePop .3s ease;
+
+}
+
+@keyframes messagePop{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.9);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+/* ===========================================================
+                    RESPONSIVE
+=========================================================== */
+
+@media(max-width:1100px){
+
+    .container{
+
+        grid-template-columns:220px 1fr;
+
+    }
+
+}
+
+@media(max-width:900px){
+
+    .container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    aside{
+
+        display:none;
+
+    }
+
+}
+
+@media(max-width:650px){
+
+    nav{
+
+        padding:20px;
+
+        flex-direction:column;
+
+        height:auto;
+
+        gap:8px;
+
+    }
+
+    main{
+
+        padding:20px;
+
+    }
+
+    .chat-input{
+
+        flex-direction:column;
+
+    }
+
+    #send-btn{
+
+        width:100%;
+
+        height:55px;
+
+    }
+
+}
+
+
+/* ===========================================================
+                    LOADING SPINNER
+=========================================================== */
+
+.loader{
+
+    width:50px;
+
+    height:50px;
+
+    border:5px solid rgba(255,255,255,.15);
+
+    border-top:5px solid var(--primary);
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+    margin:auto;
+
+}
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+/* ===========================================================
+                    HIDDEN
+=========================================================== */
+
+.hidden{
+
+    display:none;
+
+}
+
+
+/* ===========================================================
+                    SUMMARY HEADER
+=========================================================== */
+
+.summary-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+#summary-btn{
+
+    padding:12px 24px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--primary);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+#summary-btn:hover{
+
+    background:var(--primary-hover);
+
+}
+
+
+#summary-container h1,
+#summary-container h2,
+#summary-container h3,
+#summary-container h4{
+
+    margin-top:25px;
+
+    margin-bottom:15px;
+
+    color:white;
+
+}
+
+#summary-container p{
+
+    line-height:1.8;
+
+    color:#CBD5E1;
+
+}
+
+#summary-container ul{
+
+    margin-left:20px;
+
+    margin-bottom:15px;
+
+}
+
+#summary-container li{
+
+    margin-bottom:8px;
+
+}
+
+#summary-container strong{
+
+    color:white;
+
+}
+
+#summary-container code{
+
+    background:#111827;
+
+    padding:2px 6px;
+
+    border-radius:5px;
+
+}
+
+#summary-container pre{
+
+    background:#111827;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    overflow-x:auto;
+
+}
+
+#summary-container blockquote{
+
+    border-left:4px solid #3B82F6;
+
+    padding-left:15px;
+
+    color:#94A3B8;
+
+}
+
+
+/* ===========================================================
+                    MARKDOWN
+=========================================================== */
+
+#summary-container,
+
+.bubble{
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+
+#summary-container h1,
+#summary-container h2,
+#summary-container h3,
+#summary-container h4,
+.bubble h1,
+.bubble h2,
+.bubble h3,
+.bubble h4{
+
+    margin-top:25px;
+
+    margin-bottom:12px;
+
+    color:white;
+
+}
+
+
+#summary-container ul,
+.bubble ul{
+
+    margin-left:20px;
+
+    margin-bottom:15px;
+
+}
+
+
+#summary-container li,
+.bubble li{
+
+    margin-bottom:8px;
+
+}
+
+
+#summary-container p,
+.bubble p{
+
+    margin-bottom:12px;
+
+}
+
+
+#summary-container pre,
+.bubble pre{
+
+    margin:20px 0;
+
+    border-radius:12px;
+
+    overflow-x:auto;
+
+    font-size:14px;
+
+}
+
+
+#summary-container code,
+.bubble code{
+
+    border-radius:6px;
+
+}
