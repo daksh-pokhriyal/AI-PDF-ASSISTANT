@@ -8,4 +8,8 @@ services:
       uv sync
 
     startCommand: |
+<<<<<<< HEAD
       uv run uvicorn server.main:app --host 0.0.0.0 --port $PORT
+=======
+      uv run uvicorn server.main:app --host 0.0.0.0 --port $PORT
+>>>>>>> e867b26 (Prepare Render deployment)
