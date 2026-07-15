@@ -1,38 +1,50 @@
 [project]
 name = "project-777"
 version = "0.1.0"
-description = "AI PDF Assistant with RAG, Chat and Summarization"
+description = "AI PDF Assistant with RAG"
 readme = "README.md"
 requires-python = ">=3.11,<3.12"
 
 dependencies = [
-    # ---------- Backend ----------
+
+    # ---------------- FastAPI ----------------
+
     "fastapi>=0.139.0",
     "uvicorn[standard]>=0.35.0",
     "python-multipart>=0.0.20",
+
+    # ---------------- Environment ----------------
+
     "python-dotenv>=1.1.1",
 
-    # ---------- LangChain ----------
+    # ---------------- LangChain ----------------
+
     "langchain>=1.0.0",
     "langchain-core>=1.0.0",
+    "langchain-text-splitters>=1.0.0",
     "langchain-chroma>=1.0.0",
     "langchain-huggingface>=1.0.0",
     "langchain-mistralai>=1.0.0",
-    "langchain-text-splitters>=1.0.0",
 
-    # ---------- Vector DB ----------
+    # ---------------- Vector Database ----------------
+
     "chromadb>=1.5.9",
 
-    # ---------- Embeddings ----------
-    "sentence-transformers>=5.0.0",
+    # ---------------- Embeddings ----------------
 
-    # ---------- LLM ----------
+    "sentence-transformers>=5.6.0",
+
+    # ---------------- Google GenAI ----------------
+
     "google-genai>=1.30.0",
 
-    # ---------- PDF ----------
+    # ---------------- PDF ----------------
+
     "pymupdf>=1.28.0",
     "pillow>=11.0.0",
 
-    # ---------- Optional Utilities ----------
-    "numpy>=2.0.0",
+    # ---------------- Validation ----------------
+
+    "pydantic>=2.11.0",
+
 ]
